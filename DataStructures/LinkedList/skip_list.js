@@ -33,9 +33,9 @@ class SkipList {
         }
         current = current.forward[0]
         if (current && current.data === data) {
-            // 如果已存在相同数据的节点，可以在此处处理
+            current.data = data;
         } else {
-            const newLevel = this.randomLevel()
+            let newLevel = this.randomLevel()
             if (newLevel > this.level) {
                 for (let i = this.level + 1; i <= newLevel; i++) {
                     update[i] = this.head

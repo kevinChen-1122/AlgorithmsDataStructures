@@ -4,10 +4,6 @@ class CircularLinkedList {
         this.head = null
     }
 
-    /**
-     * 確認是空的
-     * @returns {boolean}
-     */
     isEmpty() {
         return this.head === null
     }

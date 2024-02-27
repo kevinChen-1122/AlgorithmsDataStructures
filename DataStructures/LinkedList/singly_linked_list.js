@@ -9,10 +9,6 @@ class SinglyLinkedList {
         this.length = 0
     }
 
-    /**
-     * 確認是空的
-     * @returns {boolean}
-     */
     isEmpty() {
         return this.length === 0
     }
